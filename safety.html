@@ -1,0 +1,326 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Safety - ScannerView</title>
+
+    <meta name="description" content="Learn how ScannerView handles documents, camera permissions, local processing, and advertising data.">
+
+    <meta name="theme-color" content="#111827">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f5f7;
+            color: #252525;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111827;
+            color: #ffffff;
+            padding: 28px 20px;
+            text-align: center;
+            border-bottom: 4px solid #d99a32;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            color: #d1d5db;
+            font-size: 14px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 32px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #111827;
+            font-size: 21px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+
+        h2:first-of-type {
+            margin-top: 24px;
+        }
+
+        p, li {
+            font-size: 15px;
+        }
+
+        a {
+            color: #a66a0a;
+            overflow-wrap: anywhere;
+        }
+
+        .updated {
+            color: #666666;
+            font-size: 13px;
+        }
+
+        .brand {
+            font-weight: bold;
+            color: #d99a32;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 16px;
+            color: #666666;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 16px;
+                padding: 22px 18px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Data Safety</h1>
+    <p>ScannerView by <span class="brand">OneSoul</span></p>
+</header>
+
+<main>
+
+    <p class="updated"><strong>Last updated:</strong> October 24, 2026</p>
+
+    <p>
+        ScannerView is a document scanning and PDF utility app developed by
+        OneSoul. We designed the app to help users scan documents and manage
+        their documents directly on their devices, without requiring an
+        account or a OneSoul-operated cloud storage service.
+    </p>
+
+    <h2>1. Data Collection by ScannerView</h2>
+
+    <p>
+        ScannerView does not require users to create an account or provide
+        personal information to use its core document-scanning features.
+    </p>
+
+    <p>
+        ScannerView does not operate its own cloud server to collect, upload,
+        or store users' scanned documents or document contents.
+    </p>
+
+    <p>
+        Documents scanned or processed using ScannerView are handled locally
+        on the user's device, provided the user does not choose to share or
+        export them through another application or service.
+    </p>
+
+    <h2>2. Camera Permission</h2>
+
+    <p>
+        ScannerView may request camera permission when you choose to scan a
+        document using your device's camera.
+    </p>
+
+    <p>
+        The camera is used to capture document images for scanning. Document
+        scanning and processing take place on your device. ScannerView does
+        not send camera captures or scanned document contents to
+        OneSoul-operated cloud servers.
+    </p>
+
+    <p>
+        You can manage or revoke camera permission through your device
+        settings. Camera-based scanning may not work if permission is denied.
+    </p>
+
+    <h2>3. Files and Documents</h2>
+
+    <p>
+        When you select a document to import or process, ScannerView accesses
+        the selected file to provide the requested functionality.
+    </p>
+
+    <p>
+        Documents processed locally by ScannerView are not uploaded to
+        OneSoul-operated cloud servers. ScannerView does not automatically
+        upload your documents to a OneSoul cloud account.
+    </p>
+
+    <p>
+        If you choose to share or export a document using another app or
+        service, that transfer is handled by the destination app or service
+        and is subject to its own privacy practices.
+    </p>
+
+    <h2>4. Advertising and Third-Party Services</h2>
+
+    <p>
+        ScannerView may display advertisements using Google AdMob, a
+        third-party advertising service provided by Google.
+    </p>
+
+    <p>
+        Although ScannerView does not operate a cloud server for collecting
+        users' documents, the Google Mobile Ads SDK may automatically collect
+        or share certain information to deliver advertisements, measure
+        advertising performance, maintain security, and prevent advertising
+        fraud.
+    </p>
+
+    <p>Depending on the SDK configuration and applicable settings, this information may include:</p>
+
+    <ul>
+        <li>IP address</li>
+        <li>Device or advertising identifiers</li>
+        <li>Interactions with advertisements and the app</li>
+        <li>Diagnostic and performance information</li>
+    </ul>
+
+    <p>
+        This information may be processed by Google and its relevant
+        advertising partners in accordance with their applicable privacy
+        policies and settings.
+    </p>
+
+    <p>
+        ScannerView does not use its own document-storage server to collect
+        users' scanned document contents for advertising.
+    </p>
+
+    <p>
+        For more information about Google's privacy practices, please visit:
+        <a href="https://policies.google.com/privacy"
+           target="_blank"
+           rel="noopener noreferrer">
+            Google Privacy Policy
+        </a>.
+    </p>
+
+    <h2>5. Data Sharing</h2>
+
+    <p>
+        OneSoul does not operate a cloud service that receives or stores
+        users' scanned documents.
+    </p>
+
+    <p>
+        However, information may be transmitted to Google or other relevant
+        third parties through the advertising SDK or other services included
+        in the app, where applicable. Such processing is subject to the
+        relevant service providers' practices.
+    </p>
+
+    <p>
+        If you deliberately share a document through another application,
+        that application may receive the document you selected.
+    </p>
+
+    <h2>6. Data Storage and Security</h2>
+
+    <p>
+        ScannerView is designed to process documents locally on your device
+        rather than storing them on OneSoul-operated cloud servers.
+    </p>
+
+    <p>
+        Documents saved by the app may remain in the app's storage or in a
+        location selected by you, depending on the feature you use. You can
+        manage saved documents using the app's available controls and your
+        device's file-management features.
+    </p>
+
+    <p>
+        Data handled by third-party services, including advertising services,
+        is subject to those providers' applicable security and retention
+        practices.
+    </p>
+
+    <h2>7. Data Retention and Deletion</h2>
+
+    <p>
+        ScannerView does not maintain a OneSoul-operated cloud database of
+        users' scanned documents.
+    </p>
+
+    <p>
+        Documents saved locally may remain on your device until you delete
+        them. Removing a document from ScannerView may not remove a separate
+        copy that you previously exported or shared elsewhere.
+    </p>
+
+    <p>
+        Information processed by third-party advertising services is subject
+        to the relevant providers' retention and deletion policies.
+    </p>
+
+    <h2>8. Children's Privacy</h2>
+
+    <p>
+        ScannerView is not specifically designed to collect children's
+        personal information. The app's advertising configuration and
+        availability are subject to applicable laws and Google Play policies.
+    </p>
+
+    <h2>9. Changes to This Data Safety Page</h2>
+
+    <p>
+        We may update this page if ScannerView's features, integrations, or
+        data-handling practices change. The latest version will be published
+        on this page with an updated revision date.
+    </p>
+
+    <h2>10. Contact Us</h2>
+
+    <p>
+        If you have questions about this Data Safety page or ScannerView's
+        privacy practices, please contact:
+    </p>
+
+    <p>
+        <strong>Developer:</strong> OneSoul<br>
+        <strong>App:</strong> ScannerView<br>
+        <strong>Email:</strong>
+        <a href="mailto:onesoul.support@gmail.com">
+            onesoul.support@gmail.com
+        </a>
+    </p>
+
+</main>
+
+<footer>
+    &copy; 2026 OneSoul. All rights reserved.
+</footer>
+
+</body>
+</html>
+```
